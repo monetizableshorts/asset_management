@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abrir Várias Abas</title>
+    <script>
+        function openLinks() {
+            var urls = [
+                'https://app.leonardo.ai/image-generation',
+                'https://playground.com/create',
+                'https://getimg.ai/text-to-image'
+            ];
+            urls.forEach(function(url) {
+                window.open(url, '_blank');
+            });
+        }
+
+        // Chamar a função openLinks quando a página for carregada
+        window.onload = openLinks;
+    </script>
+</head>
+<body>
+    <h1>Assim que todas as abas abrirem, pode me fechar. Bom trabalho :) ...</h1>
+</body>
+</html>
